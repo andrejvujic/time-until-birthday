@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #3f2b96, #a8c0ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#birthday-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#birthday-input span {
+  font-size: 3rem;
+  font-weight: bolder;
+  user-select: none;
+}
+
+#birthday-input input {
+  font-size: 1.5rem;
+  background: white;
+  outline: none;
+  padding: 5px 2.5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#birthday-until span {
+  font-size: 3rem;
+}
+
+#time-left {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#time-left div {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 150px;
+  max-width: 150px;
+  background: white;
+  border-radius: 5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.small-text {
+  font-size: 1.5rem;
+}
+
+.container {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.container:hover {
+  transform: scale(1.1);
+}
+
+#time-left div div:nth-child(odd) {
+  text-align: center;
+  font-size: 5rem;
+}
+
+#happy-birthday {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+}
+
+#happy-birthday button {
+  font-size: 2.5rem;
+  padding: 5px;
+  background: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#happy-birthday button:hover {
+  background: rgb(200, 200, 200);
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}

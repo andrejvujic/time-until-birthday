@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How long until your birthday?</title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="birthday-input">
+      <span>When is you birthday?</span>
+      <input type="datetime-local" name="birthday" id="birthday" />
+    </div>
+    <div id="birthday-until" class="hide">
+      <span>Time until your birthday:</span>
+      <div id="time-left">
+        <div id="years" class="container">
+          <div id="years-number">00</div>
+          <div class="small-text">years</div>
+        </div>
+        <div id="months" class="container">
+          <div id="months-number">00</div>
+          <div class="small-text">months</div>
+        </div>
+        <div id="days" class="container">
+          <div id="days-number">00</div>
+          <div class="small-text">days</div>
+        </div>
+        <div id="hours" class="container">
+          <div id="hours-number">00</div>
+          <div class="small-text">hours</div>
+        </div>
+        <div id="minutes" class="container">
+          <div id="minutes-number">00</div>
+          <div class="small-text">minutes</div>
+        </div>
+        <div id="seconds" class="container">
+          <div id="seconds-number">00</div>
+          <div class="small-text">seconds</div>
+        </div>
+      </div>
+    </div>
+    <div id="happy-birthday" class="hide">
+      <span>HAPPY BIRTHDAY! 🎉</span>
+      <button id="new-birthday">New Birthday</button>
+    </div>
+  </body>
+</html>
